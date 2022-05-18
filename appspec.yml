@@ -2,7 +2,7 @@
  os: linux
  files: 
    - source: /
-     destination: /home/ubuntu/devstack/
+     destination: /home/ubuntu/edx
 
  hooks:
     BeforeInstall:
