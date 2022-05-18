@@ -14,10 +14,7 @@
         runas: root 
         
     AfterInstall:
-       - location: /npm-install.sh
+       - location: /start.sh
          runas: root
          timeout: 300
-    ApplicationStart:
-        - location: /npm-start.sh
-          runas: root
-          timeout: 60
+    
