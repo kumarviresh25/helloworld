@@ -1,8 +1,8 @@
  version: 0.0
  os: linux
  files: 
-   - source: /index.html
-     destination: /var/www/html/
+   - source: /
+     destination: /home/ubuntu/edx
  hooks:
     BeforeInstall:
       - location: scripts/install_dependencies
@@ -11,3 +11,7 @@
       - location: scripts/start_server
         timeout: 300
         runas: root
+    AfterInstall:
+       - location: /start.sh
+         runas: root
+         timeout: 300    
