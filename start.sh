@@ -4,6 +4,6 @@ pip install -U Paver
 cd /edx/app/edxapp/edx-platform
 sudo -H -u edxapp bash
 source ../edxapp_env
-python manage.py lms collectstatic
+python3 manage.py lms collectstatic
 
 
