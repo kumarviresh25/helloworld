@@ -1,9 +1,7 @@
 #!/bin/bash
 sudo apt-get install -y python3-pip
 pip install -U Paver
-cd /edx/app/edxapp/edx-platform
-sudo -H -u edxapp bash
-source ../edxapp_env
-python3 manage.py lms collectstatic
+source /edx/app/edxapp/edxapp_env
+python /edx/app/edxapp/edx-platform/manage.py lms --settings production shell
 
 
