@@ -37,6 +37,7 @@ sudo apt install -y virtualenvwrapper
 sudo apt install -y libgeos-ruby1.8
 sudo apt install -y lynx-cur
 sudo apt install -y libxmlsec1-dev
+sudo apt install -y swig
 
 
 
